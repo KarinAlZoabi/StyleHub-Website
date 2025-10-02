@@ -1,21 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <title>StyleHub - Home</title>
 
     <!-- css links -->
-     <link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/variables.css">
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/components.css">
-<link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/ecommerce-features.css">
-<link rel="stylesheet" href="css/pages/home.css"> <!-- example -->
-
-</head>
-<body>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/ecommerce-features.css" />
+    <link rel="stylesheet" href="css/pages/home.css" />
     
-</body>
+  </head>
+  <body>
+  <!--  Skip link -->
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html">StyleHub</a>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Shop</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions -->
+      <div class="header-actions">
+        <form class="search-form">
+          <input type="text" placeholder="Search..." aria-label="Search">
+        </form>
+        <a href="cart.html" class="cart-icon">🛒</a>
+        <a href="account.html" class="account-icon">👤</a>
+      </div>
+    </div>
+  </header>
+
+   <!-- ROTATING HERO BANNER -->
+  <section class="hero-banner">
+    <!-- Slide 1 -->
+    <div class="banner-slide">
+      <img src="images/banner/FallCollection.avif" alt="Fall Collection">
+      <div class="banner-overlay"></div>
+      <div class="banner-content">
+        <h1>New Fall Collection 2024</h1>
+        <p>Up to 50% Off</p>
+        <a href="categories.html" class="btn btn-primary">Shop Now</a>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="banner-slide">
+      <img src="images/banner/FreeShipping.jpg" alt="Free Shipping">
+      <div class="banner-overlay"></div>
+      <div class="banner-content">
+        <h1>Free Shipping</h1>
+        <p>On Orders Over $75</p>
+        <a href="categories.html" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="banner-slide">
+      <img src="images/banner/Trending.jpg" alt="Sustainable Fashion">
+      <div class="banner-overlay"></div>
+      <div class="banner-content">
+        <h1>Trending Now</h1>
+        <p>Sustainable Fashion</p>
+        <a href="categories.html" class="btn btn-primary">Explore</a>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="banner-slide">
+      <img src="images/banner/MemberExclusive.jpg" alt="Member Exclusive">
+      <div class="banner-overlay"></div>
+      <div class="banner-content">
+        <h1>Member Exclusive</h1>
+        <p>Early Access to Sales</p>
+        <a href="account.html" class="btn btn-primary">Join Now</a>
+      </div>
+    </div>
+
+    <!-- Dots -->
+    <div class="banner-dots">
+      <span></span><span></span><span></span><span></span>
+    </div>
+  </section>
+
+  <!-- Main content -->
+  <main id="main">
+    <section class="placeholder">
+      <h2>Homepage Content</h2>
+   
+    </section>
+  </main>
+
+  </body>
 </html>
