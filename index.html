@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <title>StyleHub - Home</title>
 
@@ -15,100 +18,212 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/ecommerce-features.css" />
     <link rel="stylesheet" href="css/pages/home.css" />
-    
   </head>
   <body>
-  <!--  Skip link -->
-  <a href="#main" class="skip-link">Skip to content</a>
+    <!--  Skip link -->
+    <a href="#main" class="skip-link">Skip to content</a>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container header-container">
-      <!-- Logo -->
-      <div class="logo">
-        <a href="index.html">StyleHub</a>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container header-container">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html">StyleHub</a>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </nav>
+
+        <!-- Actions -->
+        <div class="header-actions">
+          <form class="search-form">
+            <input type="text" placeholder="Search..." aria-label="Search" />
+          </form>
+          <a href="cart.html" class="cart-icon">🛒</a>
+          <a href="account.html" class="account-icon">👤</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ROTATING HERO BANNER -->
+    <section class="hero-banner">
+      <!-- Slide 1 -->
+      <div class="banner-slide">
+        <img src="images/banner/FallCollection.avif" alt="Fall Collection" />
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+          <h1>New Fall Collection 2024</h1>
+          <p>Up to 50% Off</p>
+          <a href="categories.html" class="btn btn-primary">Shop Now</a>
+        </div>
       </div>
 
-      <!-- Navigation -->
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="categories.html">Shop</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="support.html">Support</a></li>
-        </ul>
-      </nav>
-
-      <!-- Actions -->
-      <div class="header-actions">
-        <form class="search-form">
-          <input type="text" placeholder="Search..." aria-label="Search">
-        </form>
-        <a href="cart.html" class="cart-icon">🛒</a>
-        <a href="account.html" class="account-icon">👤</a>
+      <!-- Slide 2 -->
+      <div class="banner-slide">
+        <img src="images/banner/FreeShipping.jpg" alt="Free Shipping" />
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+          <h1>Free Shipping</h1>
+          <p>On Orders Over $75</p>
+          <a href="categories.html" class="btn btn-primary">Learn More</a>
+        </div>
       </div>
-    </div>
-  </header>
 
-   <!-- ROTATING HERO BANNER -->
-  <section class="hero-banner">
-    <!-- Slide 1 -->
-    <div class="banner-slide">
-      <img src="images/banner/FallCollection.avif" alt="Fall Collection">
-      <div class="banner-overlay"></div>
-      <div class="banner-content">
-        <h1>New Fall Collection 2024</h1>
-        <p>Up to 50% Off</p>
-        <a href="categories.html" class="btn btn-primary">Shop Now</a>
+      <!-- Slide 3 -->
+      <div class="banner-slide">
+        <img src="images/banner/Trending.jpg" alt="Sustainable Fashion" />
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+          <h1>Trending Now</h1>
+          <p>Sustainable Fashion</p>
+          <a href="categories.html" class="btn btn-primary">Explore</a>
+        </div>
       </div>
-    </div>
 
-    <!-- Slide 2 -->
-    <div class="banner-slide">
-      <img src="images/banner/FreeShipping.jpg" alt="Free Shipping">
-      <div class="banner-overlay"></div>
-      <div class="banner-content">
-        <h1>Free Shipping</h1>
-        <p>On Orders Over $75</p>
-        <a href="categories.html" class="btn btn-primary">Learn More</a>
+      <!-- Slide 4 -->
+      <div class="banner-slide">
+        <img src="images/banner/MemberExclusive.jpg" alt="Member Exclusive" />
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+          <h1>Member Exclusive</h1>
+          <p>Early Access to Sales</p>
+          <a href="account.html" class="btn btn-primary">Join Now</a>
+        </div>
       </div>
-    </div>
 
-    <!-- Slide 3 -->
-    <div class="banner-slide">
-      <img src="images/banner/Trending.jpg" alt="Sustainable Fashion">
-      <div class="banner-overlay"></div>
-      <div class="banner-content">
-        <h1>Trending Now</h1>
-        <p>Sustainable Fashion</p>
-        <a href="categories.html" class="btn btn-primary">Explore</a>
+      <!-- Dots -->
+      <div class="banner-dots">
+        <span></span><span></span><span></span><span></span>
       </div>
-    </div>
-
-    <!-- Slide 4 -->
-    <div class="banner-slide">
-      <img src="images/banner/MemberExclusive.jpg" alt="Member Exclusive">
-      <div class="banner-overlay"></div>
-      <div class="banner-content">
-        <h1>Member Exclusive</h1>
-        <p>Early Access to Sales</p>
-        <a href="account.html" class="btn btn-primary">Join Now</a>
-      </div>
-    </div>
-
-    <!-- Dots -->
-    <div class="banner-dots">
-      <span></span><span></span><span></span><span></span>
-    </div>
-  </section>
-
-  <!-- Main content -->
-  <main id="main">
-    <section class="placeholder">
-      <h2>Homepage Content</h2>
-   
     </section>
-  </main>
 
+    <!-- Main content -->
+    <main id="main">
+      <!-- CATEGORY NAVIGATION -->
+      <section class="category-grid container">
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="grid">
+          <article class="category-card">
+            <img
+              src="images/categories/WomenClothing.jpg"
+              alt="Women's Clothing"
+            />
+            <div class="category-info">
+              <h3>Women’s Clothing <span>(342)</span></h3>
+              <ul class="subcats">
+                <li>Dresses</li>
+                <li>Tops</li>
+                <li>Pants</li>
+                <li>Outerwear</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="category-card">
+            <img src="images/categories/MenClothing.jpg" alt="Men's Clothing" />
+            <div class="category-info">
+              <h3>Men’s Clothing <span>(289)</span></h3>
+              <ul class="subcats">
+                <li>Shirts</li>
+                <li>Pants</li>
+                <li>Jackets</li>
+                <li>Suits</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="category-card">
+            <img src="images/categories/Footware.jpg" alt="Footwear" />
+            <div class="category-info">
+              <h3>Footwear <span>(156)</span></h3>
+              <ul class="subcats">
+                <li>Sneakers</li>
+                <li>Boots</li>
+                <li>Formal</li>
+                <li>Sandals</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="category-card">
+            <img src="images/categories/accessories.avif" alt="Accessories" />
+            <div class="category-info">
+              <h3>Accessories <span>(198)</span></h3>
+              <ul class="subcats">
+                <li>Bags</li>
+                <li>Jewelry</li>
+                <li>Watches</li>
+                <li>Belts</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="category-card">
+            <img src="images/categories/sale.jpg" alt="Sale Items" />
+            <div class="category-info">
+              <h3>Sale Items <span>(87)</span></h3>
+              <ul class="subcats">
+                <li>Women</li>
+                <li>Men</li>
+                <li>Shoes</li>
+                <li>Accessories</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="category-card">
+            <img src="images/categories/NewArrivals.jpg" alt="New Arrivals" />
+            <div class="category-info">
+              <h3>New Arrivals <span>(64)</span></h3>
+              <ul class="subcats">
+                <li>Latest</li>
+                <li>Trending</li>
+                <li>Exclusive</li>
+                <li>Fresh</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- FEATURED PRODUCTS -->
+      <section class="featured container">
+        <h2 class="section-title">Trending This Week</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-image-container">
+              <img
+                class="product-image primary"
+                src="images/FeaturedItems/ImgOneFront.webp"
+                alt=""
+              />
+              <img
+                class="product-image secondary"
+                src="images/FeaturedItems/ImgOneBack.webp"
+                alt=""
+              />
+              <span class="product-badge sale">Sale</span>
+              <button class="wishlist" aria-label="Add to wishlist">♡</button>
+              <button class="quick-view">Quick View</button>
+            </div>
+            <div class="product-info">
+              <h3>Women's Denim Shirt Jacket</h3>
+              <p class="brand">StyleHub</p>
+              <p class="price">
+                <span class="current">$35</span>
+                <span class="original">$69</span>
+              </p>
+            </div>
+          </article>
+          <!--  7 more products -->
+        </div>
+      </section>
+    </main>
   </body>
 </html>

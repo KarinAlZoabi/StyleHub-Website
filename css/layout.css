@@ -10,36 +10,31 @@
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; 
   height: 100%;
+  width: 100%;
+  padding: 0 1rem;
 }
-
-
-.main-nav {
-  margin-left: 2rem; 
-}
-
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-left: 2rem;
-}
-
 
 .logo a {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary-color);
+  text-decoration: none;
 }
 
 .main-nav ul {
   display: flex;
+  list-style: none; 
+  padding: 0;
+  margin: 0;
   gap: 1.5rem;
 }
 
 .main-nav a {
   font-weight: 500;
+  text-decoration: none;
+  color: #374151;
   transition: color 0.3s ease;
 }
 
@@ -61,6 +56,8 @@
 
 .cart-icon, .account-icon {
   font-size: 1.25rem;
+  text-decoration: none;
+  color: #374151;
   transition: color 0.3s ease;
 }
 
