@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StyleHub - About</title>
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
     <!-- css links -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/variables.css" />
@@ -12,6 +21,237 @@
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/ecommerce-features.css" />
+    <link rel="stylesheet" href="css/pages/about.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container header-container">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html">StyleHub</a>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </nav>
+
+        <!-- Actions -->
+        <div class="header-actions">
+          <form class="search-form">
+            <input type="text" placeholder="Search..." aria-label="Search" />
+          </form>
+          <a href="cart.html" class="cart-icon"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <a href="account.html" class="account-icon"
+            ><i class="fa-solid fa-user"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="about-hero">
+      <div class="about-hero-overlay"></div>
+      <div class="about-hero-content">
+        <h1>About Us</h1>
+        <p>Discover the story behind StyleHub and our passion for fashion.</p>
+      </div>
+    </section>
+
+    <!-- OUR STORY -->
+    <section class="about-story container">
+      <h2 class="section-title">Our Story</h2>
+      <div class="story-content">
+        <img src="images/AboutPage/OurStory.avif" alt="Our Story" />
+        <div class="story-text">
+          <p>
+            Founded with a vision to make fashion accessible and sustainable,
+            <strong>StyleHub</strong> brings together timeless pieces and modern
+            trends. We believe in empowering confidence through style, while
+            staying true to our values of quality and responsibility.
+          </p>
+          <p>
+            What started as a small local boutique has grown into a trusted
+            fashion destination for thousands of customers worldwide.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- COMPANY TIMELINE -->
+    <section class="company-timeline container">
+      <h2 class="section-title">Our Journey</h2>
+      <div class="timeline-cards">
+        <div class="timeline-card">
+          <div class="card-year">2015</div>
+          <h3 class="card-title">Founded</h3>
+          <p class="card-description">
+            StyleHub started as a small local boutique focused on sustainable
+            fashion.
+          </p>
+        </div>
+        <div class="timeline-card">
+          <div class="card-year">2018</div>
+          <h3 class="card-title">First Online Store</h3>
+          <p class="card-description">
+            Expanded online to reach fashion enthusiasts worldwide.
+          </p>
+        </div>
+        <div class="timeline-card">
+          <div class="card-year">2020</div>
+          <h3 class="card-title">Global Expansion</h3>
+          <p class="card-description">
+            Opened international shipping and partnered with eco-friendly
+            suppliers.
+          </p>
+        </div>
+        <div class="timeline-card">
+          <div class="card-year">2023</div>
+          <h3 class="card-title">Award-Winning Brand</h3>
+          <p class="card-description">
+            Recognized for sustainability and customer satisfaction.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUSTAINABILITY & ETHICS -->
+    <section class="sustainability container">
+      <h2 class="section-title">Sustainability & Ethics</h2>
+      <ul class="sustainability-list">
+        <li>Eco-friendly packaging and recycling initiatives</li>
+        <li>Ethical sourcing and fair trade partnerships</li>
+        <li>Carbon footprint reduction and sustainability certifications</li>
+        <li>Community engagement and support programs</li>
+      </ul>
+    </section>
+
+    <!-- TEAM -->
+    <section class="team container">
+      <h2 class="section-title">Meet the Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="images/team/founder1.jpg" alt="Founder Name" />
+          <h3>Founder Name</h3>
+          <p>CEO & Co-Founder</p>
+        </div>
+        <div class="team-member">
+          <img src="images/team/head1.jpg" alt="Head of Marketing" />
+          <h3>Head of Marketing</h3>
+          <p>Marketing & Branding</p>
+        </div>
+        <!-- Add more team members as needed -->
+      </div>
+    </section>
+
+    <!-- AWARDS & RECOGNITION -->
+    <section class="awards container">
+      <h2 class="section-title">Awards & Recognition</h2>
+      <div class="awards-grid">
+        <div class="award-card">
+          <h3>Best Sustainable Brand 2023</h3>
+          <p>Recognized for eco-conscious initiatives and ethical practices.</p>
+        </div>
+        <div class="award-card">
+          <h3>Customer Choice Award</h3>
+          <p>
+            Voted by our loyal customers for outstanding shopping experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORE LOCATIONS -->
+    <section class="store-locations container">
+      <h2 class="section-title">Our Stores</h2>
+      <div class="store-map">
+        <!-- Embed Google Maps iframe or interactive map -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=..."
+          width="100%"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="store-list">
+        <div class="store">
+          <h3>Downtown Store</h3>
+          <p>123 Main St, City, Country</p>
+          <p>Hours: Mon-Sat 10am-8pm</p>
+          <p>Manager: Jane Doe</p>
+        </div>
+        <div class="store">
+          <h3>Uptown Store</h3>
+          <p>456 High St, City, Country</p>
+          <p>Hours: Mon-Sun 11am-9pm</p>
+          <p>Manager: John Smith</p>
+        </div>
+      </div>
+    </section>
+
+     <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <h3>StyleHub</h3>
+          <p>
+            Your go-to fashion destination for trendy, affordable, and
+            sustainable styles.
+          </p>
+          <div class="footer-socials">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+      
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="categories.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="account.html">My Account</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer Support -->
+        <div class="footer-links">
+          <h4>Customer Support</h4>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-newsletter">
+          <h4>Stay Updated</h4>
+          <form>
+            <input type="email" placeholder="Your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 StyleHub. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>

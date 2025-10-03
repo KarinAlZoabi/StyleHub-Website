@@ -1,0 +1,114 @@
+/* ABOUT HERO */
+.about-hero {
+  position: relative;
+  height: 70vh;
+  background: url("../../images/AboutPage/banner.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  padding: 1rem;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 8px rgba(0,0,0,0.6);
+}
+
+.about-hero p {
+  font-size: 1.25rem;
+  color: #f1f5f9;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+
+/* OUR STORY */
+.about-story {
+  /* margin: 4rem 0; */
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.story-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.story-content img {
+  width: 50%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.story-text {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-dark);
+}
+
+
+/* COMPANY TIMELINE - 4 CARDS GRID */
+.company-timeline {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.timeline-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.timeline-card {
+  background: white;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.card-year {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #64748b;
+}
+
+
