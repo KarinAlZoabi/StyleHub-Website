@@ -1,7 +1,14 @@
+/* Normalize spacing for sections */
+.category-grid, .featured, .social-proof, .newsletter {
+  margin: 4rem 0;
+}
+
+
 .hero-banner {
   position: relative;
   height: 70vh;
   overflow: hidden;
+  margin-top: 0%;
 }
 
 .banner-slide {
@@ -129,9 +136,7 @@
   justify-content: center;
   flex-direction: column;
 }
-.category-grid {
-  margin: 4rem 0;
-}
+
 
 .section-title {
   font-size: 2rem;
@@ -201,14 +206,10 @@
 
 
 /* FEATURED PRODUCTS */
-.featured {
-  margin: 4rem 0;
-}
-
 .product-grid {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .product-card {
@@ -261,17 +262,28 @@
 .product-badge.new { background: #10b981; }
 .product-badge.bestseller { background: #f59e0b; }
 
-.wishlist {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  cursor: pointer;
+.product-info
+{
+  display: flex;
+  justify-content: space-between;
 }
+
+.wishlist input {
+  display: none;
+}
+
+.wishlist i {
+  font-size: 1.1rem;
+  color: #555;
+  transition: color 0.3s ease;
+  pointer-events: none;
+}
+
+.wishlist input:checked + i {
+  color: #ef4444;
+  font-weight: 900;
+}
+
 
 .quick-view {
   position: absolute;
@@ -312,4 +324,138 @@
   text-decoration: line-through;
   color: var(--text-light);
   margin-left: 0.5rem;
+}
+
+
+/* SOCIAL PROOF */
+.social-proof {
+  /* margin: 4rem 0; */
+  text-align: center;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.testimonial {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.stars {
+  color: #fbbf24;
+  font-size: 1.5rem;
+margin: 0;
+  letter-spacing: 2px;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.author {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* Instagram Feed */
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0.75rem;
+}
+
+.insta-grid img {
+  width: 100%;
+  aspect-ratio: 1/1.5;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.4s ease;
+}
+
+.insta-grid img:hover {
+  transform: scale(1.05);
+}
+
+
+/* NEWSLETTER */
+.newsletter {
+  background: linear-gradient(135deg, #111827, #1f2937);
+  color: white;
+  padding: 2.5rem 1rem 4rem;;
+  text-align: center;
+  border-radius: 12px;
+
+}
+
+.newsletter-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.newsletter h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter p {
+  color: #d1d5db;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input {
+  flex: 1;
+  min-width: 250px;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-newsletter {
+  background: linear-gradient(135deg, #ec4899, #ef4444);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-newsletter:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
 }
